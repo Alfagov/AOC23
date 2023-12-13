@@ -36,3 +36,11 @@ func ReadFileLines(file string) []string {
 
 	return lines
 }
+
+func RemoveEmpty(n string) bool {
+	if n == "" {
+		return true
+	} else {
+		return false
+	}
+}
