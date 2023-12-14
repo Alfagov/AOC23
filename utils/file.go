@@ -3,6 +3,7 @@ package utils
 import (
 	"bufio"
 	"os"
+	"strings"
 	"time"
 )
 
@@ -43,4 +44,8 @@ func RemoveEmpty(n string) bool {
 	} else {
 		return false
 	}
+}
+
+func RemoveSpaces(n string) string {
+	return strings.Replace(n, " ", "", -1)
 }
